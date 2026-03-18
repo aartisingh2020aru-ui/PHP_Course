@@ -33,6 +33,7 @@
     <div class="ps-page">
 
       <?php include "includes/header.php" ?>
+      <?php include "includes/config.php"?>
       
         <div class="ps-home ps-home--3">
             <section class="ps-section--banner">
