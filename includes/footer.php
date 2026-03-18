@@ -51,23 +51,22 @@
                                     <div class="ps-footer--block">
                                         <h5 class="ps-block__title">Information</h5>
                                         <ul class="ps-block__list">
-                                            <li><a href="about-us.html">About us</a></li>                       
-                                            <li><a href="contact-us.html">Contact us</a></li>                       
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Sales</a></li>
-                                            <li><a href="#">Terms &amp; Conditions</a></li>
+                                            <li><a href="index.php">Home</a></li>                       
+                                            <li><a href="about-us.php">About us</a></li>                       
+                                            <li><a href="contact-us.php">Contact us</a></li>                       
+                                                                 
+                                            
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-6">
                                     <div class="ps-footer--block">
-                                        <h5 class="ps-block__title">Account</h5>
+                                         <br><br>
                                         <ul class="ps-block__list">
-                                            <li><a href="#">My account</a></li>
-                                            <li><a href="#">My orders</a></li>
-                                            <li><a href="#">Returns</a></li>
-                                            <li><a href="#">Shipping</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                            <li><a href="blog-masonry.php">Blogs</a></li>                       
+                                            <li><a href="product1.php">Products</a></li> 
+                                            <li><a href="my-account.php">My account</a></li>
+                                            
                                         </ul>
                                     </div>
                                 </div>
