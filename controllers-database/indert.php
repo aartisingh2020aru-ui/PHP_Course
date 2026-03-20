@@ -9,12 +9,10 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-
 // echo $full_name;
 // echo $email;
 // echo $phone;
 // echo $message;
-
 
 $sql = "INSERT INTO php_contacts(Name, Email, Phone, Message)
 
