@@ -1,12 +1,12 @@
-﻿
 <?php
     include "includes/config.php";
 
-    $sql = "SELECT *FROM php_contacts";
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM php_contacts  WHERE id = $id";
     $result = mysqli_query($conn, $sql);
-?>
-
-
+    $row = mysqli_fetch_assoc($result);
+    ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,165 +41,53 @@
     <div class="ps-page">
 
         <?php include "includes/header.php" ?>
-        
-        <div class="ps-wishlist">
+       
+
+        <div class="ps-contact">
             <div class="container">
                 <ul class="ps-breadcrumb">
                     <li class="ps-breadcrumb__item"><a href="index.html">Home</a></li>
-                    <li class="ps-breadcrumb__item active" aria-current="page">Contact</li>
+                    <li class="ps-breadcrumb__item active" aria-current="page">Contact us</li>
                 </ul>
-                <h3 class="ps-wishlist__title">Contact Details</h3>
-                <div class="ps-wishlist__content">
-                    <ul class="ps-wishlist__list">
-                        <li>
-                            <div class="ps-product ps-product--wishlist">
-                                <div class="ps-product__remove"><a href="#"><i class="icon-cross"></i></a></div>
-                                <div class="ps-product__thumbnail"><a class="ps-product__image" href="product1.html">
-                                        <figure><img src="img/products/001.jpg" alt="alt"><img src="img/products/009.jpg" alt="alt">
-                                        </figure>
-                                    </a></div>
-                                <div class="ps-product__content">
-                                    <h5 class="ps-product__title"><a href="product1.html">Digital Thermometer X30-Pro</a></h5>
-                                    <div class="ps-product__row">
-                                        <div class="ps-product__label">Price:</div>
-                                        <div class="ps-product__value"><span class="ps-product__price sale">$77.65</span><span class="ps-product__del">$80.65</span>
-                                        </div>
-                                    </div>
-                                    <div class="ps-product__row ps-product__stock">
-                                        <div class="ps-product__label">Stock:</div>
-                                        <div class="ps-product__value"><span class="ps-product__out-stock">Out of stock </span>
-                                        </div>
-                                    </div>
-                                    <div class="ps-product__cart">
-                                        <button class="ps-btn">Add to cart</button>
-                                    </div>
-                                    <div class="ps-product__row ps-product__quantity">
-                                        <div class="ps-product__label">Quantity:</div>
-                                        <div class="ps-product__value">1</div>
-                                    </div>
-                                    <div class="ps-product__row ps-product__subtotal">
-                                        <div class="ps-product__label">Subtotal:</div>
-                                        <div class="ps-product__value">$77.65</div>
-                                    </div>
+               
+                <form action="controllers-database/update.php" method="post">
+                    <div class="ps-form--contact">
+                        <h2 class="ps-form__title">Update form</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="ps-form__group">
+                                    <input type="hidden" name="id" value="<?php echo $row['ID']?>">
+                                    <input class="form-control ps-form__input" type="text" placeholder="full Name" name="full_Name" value="<?php echo $row['Name']?>">
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="ps-product ps-product--wishlist">
-                                <div class="ps-product__remove"><a href="#"><i class="icon-cross"></i></a></div>
-                                <div class="ps-product__thumbnail"><a class="ps-product__image" href="product1.html">
-                                        <figure><img src="img/products/011.jpg" alt="alt">
-                                        </figure>
-                                    </a></div>
-                                <div class="ps-product__content">
-                                    <h5 class="ps-product__title"><a href="product1.html">Hill-Rom Affinity III Progressa iBed</a></h5>
-                                    <div class="ps-product__row">
-                                        <div class="ps-product__label">Price:</div>
-                                        <div class="ps-product__value"><span class="ps-product__price">$488.23</span>
-                                        </div>
-                                    </div>
-                                    <div class="ps-product__row ps-product__stock">
-                                        <div class="ps-product__label">Stock:</div>
-                                        <div class="ps-product__value"><span class="ps-product__in-stock">In Stock</span>
-                                        </div>
-                                    </div>
-                                    <div class="ps-product__cart">
-                                        <button class="ps-btn">Add to cart</button>
-                                    </div>
-                                    <div class="ps-product__row ps-product__quantity">
-                                        <div class="ps-product__label">Quantity:</div>
-                                        <div class="ps-product__value">1</div>
-                                    </div>
-                                    <div class="ps-product__row ps-product__subtotal">
-                                        <div class="ps-product__label">Subtotal:</div>
-                                        <div class="ps-product__value">$488.23</div>
-                                    </div>
+                            <div class="col-12 col-md-4">
+                                <div class="ps-form__group">
+                                    <input class="form-control ps-form__input" type="email" placeholder="Your E-mail" name="email" value="<?php echo $row['Email']?>">
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="ps-product ps-product--wishlist">
-                                <div class="ps-product__remove"><a href="#"><i class="icon-cross"></i></a></div>
-                                <div class="ps-product__thumbnail"><a class="ps-product__image" href="product1.html">
-                                        <figure><img src="img/products/012.jpg" alt="alt"><img src="img/products/013.jpg" alt="alt">
-                                        </figure>
-                                    </a></div>
-                                <div class="ps-product__content">
-                                    <h5 class="ps-product__title"><a href="product1.html">Hill-Rom Affinity III Progressa iBed</a></h5>
-                                    <div class="ps-product__row">
-                                        <div class="ps-product__label">Price:</div>
-                                        <div class="ps-product__value"><span class="ps-product__price">$436.87</span>
-                                        </div>
-                                    </div>
-                                    <div class="ps-product__row ps-product__stock">
-                                        <div class="ps-product__label">Stock:</div>
-                                        <div class="ps-product__value"><span class="ps-product__in-stock">In Stock</span>
-                                        </div>
-                                    </div>
-                                    <div class="ps-product__cart">
-                                        <button class="ps-btn">Add to cart</button>
-                                    </div>
-                                    <div class="ps-product__row ps-product__quantity">
-                                        <div class="ps-product__label">Quantity:</div>
-                                        <div class="ps-product__value">1</div>
-                                    </div>
-                                    <div class="ps-product__row ps-product__subtotal">
-                                        <div class="ps-product__label">Subtotal:</div>
-                                        <div class="ps-product__value">$436.87</div>
-                                    </div>
+                            <div class="col-12 col-md-4">
+                                <div class="ps-form__group">
+                                    <input class="form-control ps-form__input" type="text" placeholder="Phone" name="phone" value="<?php echo $row['Phone']?>">
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                    <div class="ps-wishlist__table">
-                        <table class="table ps-table ps-table--product">
-                            <thead>
-                                <tr>
-                                    
-                                    <th class="ps-product__name">ID</th>
-                                    <th class="ps-product__name">Full name</th>
-                                    <th class="ps-product__meta">Email</th>
-                                    <th class="ps-product__status">Phone</th>
-                                    <th class="ps-product__status">Message</th>
-                                    <th class="ps-product__cart">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                            <?php  
-                                while($row = mysqli_fetch_assoc($result)){
-                                    ?>
-                                <tr>
-                                    <td class="ps-product__name"> <a href="product1.html"><?php echo $row['ID']?></a></td>
-                                    <td class="ps-product__name"> <a href="product1.html"><?php echo $row['Name']?></a></td>
-                                    <td class="ps-product__name"> <a href="product1.html"><?php echo $row['Email']?></a></td>
-                                    <td class="ps-product__name"> <a href="product1.html"><?php echo $row['Phone']?></a></td>
-                                    <td class="ps-product__name"> <a href="product1.html"><?php echo $row['Message']?></a></td>
-                                   
-                                    <td class="ps-product__cart">
-                                        <a href="edit.php?id=<?php echo $row['ID']?>" class="ps-btn">Edit</a>
-                                        <a href="" class="ps-btn">Delete</a>
-                                    </td>  
-                                </tr>
-                                
-                                <?php 
-                                    }
-                                ?>
-
-                            </tbody>
-                        </table>
-
-
+                            <div class="col-12">
+                                <div class="ps-form__group">
+                                    <textarea class="form-control ps-form__textarea" rows="5" placeholder="Message" name="message"><?php echo $row['Message']?></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps-form__submit">
+                            <button class="ps-btn ps-btn--warning">Submit</button>
+                        </div>
                     </div>
-                
-
-                    
-                </div>
+                </form>
+               
             </div>
         </div>
-       
-        <?php include "includes/footer.php"?>
 
+
+        
+       <?php include "includes/footer.php"?>
     </div>
     <div class="ps-search">
         <div class="ps-search__content ps-search--mobile"><a class="ps-search__close" href="#" id="close-search"><i class="icon-cross"></i></a>

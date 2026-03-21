@@ -17,21 +17,13 @@
                      <li><a class="ps-header__item open-search" href="#"><i class="icon-magnifier"></i></a></li>
                      <li><a class="ps-header__item" href="#" id="login-modal"><i class="icon-user"></i></a>
                          <div class="ps-login--modal">
-                             <form method="get" action="do_action">
-                                 <div class="form-group">
-                                     <label>Username or Email Address</label>
-                                     <input class="form-control" type="text">
-                                 </div>
-                                 <div class="form-group">
-                                     <label>Password</label>
-                                     <input class="form-control" type="password">
-                                 </div>
-                                 <div class="form-group form-check">
-                                     <input class="form-check-input" type="checkbox">
-                                     <label>Remember Me</label>
-                                 </div>
-                                 <button class="ps-btn ps-btn--warning" type="submit">Log In</button>
-                             </form>
+                            
+
+                                 <a href="" class="ps-btn ps-btn--warning mb-3">Log In</a>
+                                 <a href="" class="ps-btn bg-warning mb-2">Register</a>
+                                 <a href="my-account.php">My Account</a>
+                                 <a href="">Log out</a>
+
                          </div>
                      </li>
                      <li><a class="ps-header__item" href="wishlist.html"><i class="fa fa-heart-o"></i><span class="badge">3</span></a></li>
