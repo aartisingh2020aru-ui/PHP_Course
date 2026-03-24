@@ -63,7 +63,10 @@
                         </div>
                     </div>
                 </div>
+<!-- =========================================== -->
+
                 <form action="controllers-database/insert.php" method="post">
+                    
                     <div class="ps-form--contact">
                         <h2 class="ps-form__title">Fill up the form if you have any question</h2>
                         <div class="row">
