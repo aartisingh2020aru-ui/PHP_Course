@@ -12,7 +12,9 @@ $message = $_POST['message'];
 $sql = "UPDATE php_contacts SET Name = '$full_name', Email='$email', Phone='$phone', Message ='$message' WHERE ID = '$id'";
 
 if(mysqli_query($conn,$sql)){
-    echo "Data Updated Successfully!";
+    // echo "Data Updated Successfully!";
+        header("Location: ../my-account.php");
+
 }else{
     echo "Updation Failed!";
 }

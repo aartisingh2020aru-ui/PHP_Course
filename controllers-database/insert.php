@@ -19,7 +19,9 @@ $sql = "INSERT INTO php_contacts(Name, Email, Phone, Message)
 VALUES('$full_name' , '$email' , '$phone' , '$message')";
 
 if(mysqli_query($conn, $sql)){
-    echo "Data inserted successfully!";
+    // echo "Data inserted successfully!";
+        header("Location: ../my-account.php");
+
 }else{
     echo "Data failed!";
 }

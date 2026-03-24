@@ -178,7 +178,7 @@
                                    
                                     <td class="ps-product__cart">
                                         <a href="edit.php?id=<?php echo $row['ID']?>" class="ps-btn">Edit</a>
-                                        <a href="" class="ps-btn">Delete</a>
+                                        <a href="controllers-database/delete.php?id=<?php echo $row['ID']?>" class="ps-btn">Delete</a>
                                     </td>  
                                 </tr>
                                 
