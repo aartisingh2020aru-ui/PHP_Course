@@ -20,7 +20,7 @@
                             
 
                                  <a href="" class="ps-btn ps-btn--warning mb-3">Log In</a>
-                                 <a href="" class="ps-btn bg-warning mb-2">Register</a>
+                                 <a href="register.php" class="ps-btn bg-warning mb-2">Register</a>
                                  <a href="my-account.php">My Account</a>
                                  <a href="">Log out</a>
 
