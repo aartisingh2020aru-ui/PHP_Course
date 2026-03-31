@@ -38,27 +38,23 @@
                 <div class="row justify-content-center">
                    
                      <div class="col-12 col-md-6">
-                        <form action="do_action" method="post">
+                        <form action="controllers-database/login.php" method="post">
                             <div class="ps-form--review">
                                 <h2 class="ps-form__title">Login</h2>
                                 <div class="ps-form__group">
                                     <label class="ps-form__label">Username or email address *</label>
-                                    <input class="form-control ps-form__input" type="email">
+                                    <input class="form-control ps-form__input" type="email" name="email">
                                 </div>
                                 <div class="ps-form__group">
                                     <label class="ps-form__label">Password *</label>
                                     <div class="input-group">
-                                        <input class="form-control ps-form__input" type="password">
+                                        <input class="form-control ps-form__input" type="password" name="password">
                                         <div class="input-group-append"><a class="fa fa-eye-slash toogle-password" href="javascript: vois(0);"></a></div>
                                     </div>
                                 </div>
                                 <div class="ps-form__submit">
                                     <button class="ps-btn ps-btn--warning">Log in</button>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="remember">
-                                        <label class="form-check-label" for="remember">Remember me</label>
-                                    </div>
-                                </div><a class="ps-account__link" href="lost-password.html">Lost your password?</a>
+                                </div>
                             </div>
                         </form>
                     </div>

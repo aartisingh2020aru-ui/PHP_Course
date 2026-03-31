@@ -19,10 +19,10 @@
                          <div class="ps-login--modal">
                             
 
-                                 <a href="" class="ps-btn ps-btn--warning mb-3">Log In</a>
-                                 <a href="register.php" class="ps-btn bg-warning mb-2">Register</a>
-                                 <a href="my-account.php">My Account</a>
-                                 <a href="">Log out</a>
+                                 <a href="login.php"    class="ps-btn bg-info  text-white mb-3">Log In</a>
+                                 <a href="register.php" class="ps-btn bg-success  text-white mb-2">Register</a>
+                                 <a href="my-account.php" class="ps-btn bg-warning  text-white mb-2">My Account</a>
+                                 <a href="logout.php"  class="ps-btn bg-danger  text-white mb-2">Log out</a>
 
                          </div>
                      </li>
