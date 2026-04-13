@@ -24,17 +24,17 @@
                     <form action="databse/insert.php" method="post">
 
                         <div class="col-12 col-md-12 mb-4">
-                            <label for="name">Name:</label>
+                            <label for="name">Name:</label> <br>
                             <input type="text" placeholder="enter your name" name="name">
                         </div>
 
                         <div class="col-12 col-md-12 mb-4">
-                            <label for="email">E-mail:</label>
+                            <label for="email">E-mail:</label> <br>
                             <input type="text" placeholder="enter e-mail" name="email">
                         </div>
 
                         <div class=" col-12 col-md-12 mb-4">
-                            <label for="phone">Phone No.</label>
+                            <label for="phone">Phone No.</label> <br>
                             <input type="text" placeholder="phone no." name="phone_no">
                         </div>
 
@@ -50,8 +50,10 @@
                         </div>
 
                         <div class=" col-12 col-md-12 mb-4">
-                            <textarea name="message" placeholder="message here..." rows="4" cols="20"></textarea>
+                            <textarea name="message" placeholder="message here..." rows="4" cols="50"></textarea>
                         </div>
+
+                        <button type="submit" >Submit</button>
 
                        
                     </form>

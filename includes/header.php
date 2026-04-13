@@ -16,15 +16,34 @@
                  <ul class="ps-header__icons">
                      <li><a class="ps-header__item open-search" href="#"><i class="icon-magnifier"></i></a></li>
                      <li><a class="ps-header__item" href="#" id="login-modal"><i class="icon-user"></i></a>
-                         <div class="ps-login--modal">
-                            
 
-                                 <a href="login.php"    class="ps-btn bg-info  text-white mb-3">Log In</a>
+
+
+                         <div class="ps-login--modal">
+
+                             <?php
+                                if (!isset($_SESSION['user_id'])) {
+                             ?>
+                                 <a href="login.php" class="ps-btn bg-info  text-white mb-3">Log In</a>
                                  <a href="register.php" class="ps-btn bg-success  text-white mb-2">Register</a>
+
+
+                             <?php
+                                } else {
+                              ?>
                                  <a href="my-account.php" class="ps-btn bg-warning  text-white mb-2">My Account</a>
-                                 <a href="logout.php"  class="ps-btn bg-danger  text-white mb-2">Log out</a>
+                                 <a href="controllers-database/logout.php" class="ps-btn bg-danger  text-white mb-2">Log out</a>
+
+
+                             <?php
+                                }
+                             ?>
 
                          </div>
+
+
+
+
                      </li>
                      <li><a class="ps-header__item" href="wishlist.html"><i class="fa fa-heart-o"></i><span class="badge">3</span></a></li>
                      <li><a class="ps-header__item" href="#" id="cart-mini"><i class="icon-cart-empty"></i><span class="badge">2</span></a>
@@ -225,7 +244,4 @@
 
 
  <!-- ====================footer========================= -->
-  <!-- ========================================== -->
-
-
-  
+ <!-- ========================================== -->
