@@ -21,26 +21,26 @@
 
                     <h2>fill the form!</h2>
 
-                    <form action="databse/insert.php" method="post">
+                    <form action="database/insert.php" method="post">
 
                         <div class="col-12 col-md-12 mb-4">
                             <label for="name">Name:</label> <br>
-                            <input type="text" placeholder="enter your name" name="name">
+                            <input class="form-control" type="text" placeholder="enter your name" name="name">
                         </div>
 
                         <div class="col-12 col-md-12 mb-4">
                             <label for="email">E-mail:</label> <br>
-                            <input type="text" placeholder="enter e-mail" name="email">
+                            <input class="form-control" type="text" placeholder="enter e-mail" name="email">
                         </div>
 
                         <div class=" col-12 col-md-12 mb-4">
                             <label for="phone">Phone No.</label> <br>
-                            <input type="text" placeholder="phone no." name="phone_no">
+                            <input class="form-control" type="text" placeholder="phone no." name="phone">
                         </div>
 
                         <div class=" col-12 col-md-12 mb-4">
-                            <label for="city">Choose city</label>
-                            <select name="city" >
+                            <label for="city">Choose city</label> <br>
+                            <select class="form-control"  name="city" >
                                 <option value="select">Select</option>
                                 <option value="delhi">Delhi</option>
                                 <option value="bihar">Bihar</option>
@@ -50,7 +50,7 @@
                         </div>
 
                         <div class=" col-12 col-md-12 mb-4">
-                            <textarea name="message" placeholder="message here..." rows="4" cols="50"></textarea>
+                            <textarea class="form-control" name="message" placeholder="message here..." rows="4" cols="50"></textarea>
                         </div>
 
                         <button type="submit" >Submit</button>
